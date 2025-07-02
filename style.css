@@ -1,23 +1,79 @@
 body {
-  font-family: sans-serif;
-  text-align: center;
-  background: #f9f9f9;
+  background-color: #000;
+  color: #fff;
+  font-family: 'VT323', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #111;
+  border: 4px solid #44f;
   padding: 20px;
+  box-shadow: 0 0 12px #44f;
+  text-align: center;
 }
-.container {
-  max-width: 600px;
-  margin: auto;
+
+h1 {
+  font-size: 36px;
+  color: #66f;
+  margin-bottom: 20px;
 }
+
+h2 {
+  font-size: 28px;
+  color: #6cf;
+  margin-bottom: 10px;
+}
+
 textarea {
-  width: 100%;
-  height: 100px;
+  width: 90%;
+  height: 80px;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  background-color: #000;
+  color: #0f0;
+  border: 2px solid #444;
+  padding: 10px;
   margin: 10px 0;
+  resize: none;
 }
+
 input[type="file"] {
+  font-family: 'VT323', monospace;
   margin: 10px 0;
 }
+
 button {
+  background-color: #222;
+  color: #0f0;
+  border: 2px solid #0f0;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
   padding: 10px 20px;
-  margin: 10px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0f0;
+  color: #000;
+}
+
+a#download {
+  display: none;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #0ff;
+  text-decoration: none;
+  display: block;
+}
+
+.panel {
+  background-color: #000;
+  border: 2px solid #333;
+  margin-top: 20px;
+  padding: 20px;
 }
