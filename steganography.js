@@ -83,3 +83,8 @@ function messageToBits(msg) {
   }
   return bits;
 }
+const backgroundAudio = document.getElementById('backgroundAudio');
+backgroundAudio.addEventListener('ended', () => {
+  backgroundAudio.currentTime = 0;
+  backgroundAudio.play();
+});
