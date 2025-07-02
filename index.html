@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Steganography Tool</title>
+  <meta charset="UTF-8">
+  <title>Dark Room - Steganography</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Steganography Tool</h1>
-  <div class="container">
-    <h2>Encode</h2>
-    <input type="file" id="encode-image" accept="image/*">
-    <textarea id="message" placeholder="Message to hide"></textarea>
-    <button onclick="encode()">Encode</button>
-    <canvas id="canvas" style="display:none;"></canvas>
-    <a id="download" style="display:none;" download="encoded.png">Download Encoded Image</a>
+  <div class="frame">
+    <h1>🕳️ Dark Room - Hide your secrets</h1>
+    
+    <div class="panel">
+      <h2>🖼️ Encode</h2>
+      <input type="file" id="encode-image" accept="image/*">
+      <textarea id="message" placeholder="Write your secret message..."></textarea>
+      <button onclick="encode()">ENCODE</button>
+      <a id="download" download="encoded.png">⬇️ Download Encoded Image</a>
+    </div>
 
-    <h2>Decode</h2>
-    <input type="file" id="decode-image" accept="image/*">
-    <button onclick="decode()">Decode</button>
-    <textarea id="decoded-message" placeholder="Decoded message"></textarea>
+    <div class="panel">
+      <h2>🔍 Decode</h2>
+      <input type="file" id="decode-image" accept="image/*">
+      <button onclick="decode()">DECODE</button>
+      <textarea id="decoded-message" placeholder="Decoded message will appear here..."></textarea>
+    </div>
+    
+    <canvas id="canvas" style="display:none;"></canvas>
   </div>
 
   <script src="steganography.js"></script>
