@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Steganography Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Steganography Tool</h1>
+  <div class="container">
+    <h2>Encode</h2>
+    <input type="file" id="encode-image" accept="image/*">
+    <textarea id="message" placeholder="Message to hide"></textarea>
+    <button onclick="encode()">Encode</button>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <a id="download" style="display:none;" download="encoded.png">Download Encoded Image</a>
+
+    <h2>Decode</h2>
+    <input type="file" id="decode-image" accept="image/*">
+    <button onclick="decode()">Decode</button>
+    <textarea id="decoded-message" placeholder="Decoded message"></textarea>
+  </div>
+
+  <script src="steganography.js"></script>
+</body>
+</html>
